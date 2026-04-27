@@ -6,7 +6,6 @@ export async function login(email, password) {
     password,
   });
 
-  // Guardamos el token
   localStorage.setItem("token", response.data.token);
 
   return response.data.user;
